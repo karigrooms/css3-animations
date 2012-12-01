@@ -1,0 +1,177 @@
+body {
+	background: #E1F3FC url(../images/bak-body.png) repeat-x;
+}
+
+#instructions {
+	margin: 0 auto;
+	padding-top: 400px;
+	text-align: center;
+}
+
+
+
+/* CLOUDS */
+
+#clouds1 {
+	position: absolute;
+	background: url(../images/clouds1.png) repeat-x;
+	top: 0; left: -9999px; bottom: 0; right: 0;
+	height: 60px;
+}
+
+#clouds2 {
+	position: absolute;
+	top: 10px; left: -9999px; bottom: 0; right: 0;
+	background: url(../images/clouds2.png) repeat-x 0 0;
+	height: 90px;
+}
+
+body.animate #clouds1 {
+	left: 9999px;
+	-webkit-transition: left 2500s linear;
+	-moz-transition: left 2500s linear;
+	-0-transition: left 2500s linear;
+	transition: left 2500s linear;
+}
+body.animate #clouds2 {
+	left: 9999px;
+	-webkit-transition: left 1500s linear;
+	-moz-transition: left 1500s linear;
+	-0-transition: left 1500s linear;
+	transition: left 1500s linear;
+}
+
+
+
+/* WAVES */
+
+#wave1, #wave2, #wave3, #wave4 {
+	background: url(../images/waves.png) repeat-x;
+	height: 80px;
+}
+
+#wave1 {
+	position: absolute;
+	top: 200px; left: -9999px; right: 0; bottom: 0;
+}
+
+#wave2 {
+	position: absolute;
+	top: 230px; left: 0px; right: 0; bottom: 0;
+	background-position: 120px 0;
+}
+
+#wave3 {
+	position: absolute;
+	top: 260px; left: -5555px; right: 0; bottom: 0;
+}
+
+#wave4 {
+	position: absolute;
+	top: 300px; left: 0; right: 0; bottom: 0;
+	background-position: 120px 0;
+}
+
+body.animate #wave1 {
+	left: 9999px;
+	-webkit-transition: left 140s linear;
+	-moz-transition: left 140s linear;
+	-0-transition: left 140s linear;
+	transition: left 140s linear;
+}
+
+body.animate #wave2 {
+	left: -9999px;
+	-webkit-transition: left 160s linear;
+	-moz-transition: left 160s linear;
+	-0-transition: left 160s linear;
+	transition: left 160s linear;
+}
+
+body.animate #wave3 {
+	left: 9999px;
+	-webkit-transition: left 180s linear;
+	-moz-transition: left 180s linear;
+	-0-transition: left 180s linear;
+	transition: left 180s linear;
+}
+
+body.animate #wave4 {
+	left: -9999px;
+	-webkit-transition: left 200s linear;
+	-moz-transition: left 200s linear;
+	-0-transition: left 200s linear;
+	transition: left 200s linear;
+}
+
+
+
+/* SPECIAL ANIMATIONS */
+
+#rain-cloud {
+	position: absolute;
+	top: 25px; left: -200px; bottom: 0; right: 0;
+	background: url(../images/rain-cloud.png) no-repeat 0 0;
+	height: 125px;
+}
+
+body.animate #rain-cloud {
+	left: 9999px;
+	-webkit-transition: left 50s linear 4s;
+	-moz-transition: left 100s linear 4s;
+	-o-transition: left 100s linear 4s;
+	transition: left 100s linear 4s;
+}
+
+#nemo {
+	position: absolute;
+	top: 300px; left: 50px;
+	
+}
+
+body.animate #nemo {
+	-webkit-animation: jumpOut 3s 1 10s;
+	-moz-animation: jumpOut 3s 1 10s;
+}
+
+body.animate #nemo img {
+	-webkit-animation: jumpIn 3s 1 10s;
+	-moz-animation: jumpIn 3s 1 10s;
+}
+
+@-webkit-keyframes jumpOut {
+	from {top: 300px;}
+	50% {top: 150px; left: 200px;}
+	to {top: 300px; left: 450px;}
+}
+
+@-webkit-keyframes jumpIn {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(70deg);}
+}
+
+@-moz-keyframes jumpOut {
+	from {top: 300px;}
+	50% {top: 150px; left: 200px;}
+	to {top: 300px; left: 450px;}
+}
+
+@-moz-keyframes jumpIn {
+	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(70deg);}
+}
+
+#space-ghost {
+	position: absolute;
+	top: 25px; left: 2000px; bottom: 0; right: 0;
+	background: url(../images/space-ghost.png) no-repeat 0 0;
+	height: 125px;
+}
+
+body.animate #space-ghost {
+	left: -1000px;
+	-webkit-transition: left 10s linear 14s;
+	-moz-transition: left 10s linear 14s;
+	-o-transition: left 10s linear 14s;
+	transition: left 10s linear 14s;
+}
